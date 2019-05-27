@@ -1,0 +1,25 @@
+body,
+html {
+  height: 100%;
+  background: #C1CAD6;
+}
+
+.radius {
+  height: 75px;
+  width: 75px;
+  margin: 0 auto;
+  background-color: rgba(111, 137, 211, .6);
+  border-radius: 50%;
+}
+
+.circle_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.slider_container {
+  width: 200px;
+  margin: 0 auto;
+}

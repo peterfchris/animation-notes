@@ -1,0 +1,65 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.intro {
+    color: #222;
+    font-size: 30px;
+}
+
+.slideIn {
+    display: inline;
+    text-indent: 8px;
+}
+
+.slideIn span {
+    animation: leftToBottom 10s linear infinite 0s;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.slideIn span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.slideIn span:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.slideIn span:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.slideIn span:nth-child(5) {
+    animation-delay: 8s;
+}
+
+@-webkit-keyframes leftToBottom {
+    5% {
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    10% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+    25% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+    30% {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+    }
+}
+
+
+.developer {
+    font-family: courier;
+    color: #b72559;
+}
+
+.tool {
+    text-transform: uppercase;
+}

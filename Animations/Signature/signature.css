@@ -1,0 +1,99 @@
+svg {
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  
+  path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 7;
+    stroke-linecap: square;
+    stroke-linejoin: butt;
+    stroke-miterlimit: 10;
+  }
+  
+  .sig1 {
+    stroke-dasharray: 90;
+    animation: stroke1 2.5s 1 ease-out;
+  }
+  
+  .sig2 {
+    stroke-dasharray: 480;
+    animation: stroke2 2.5s 1 ease-out;
+  }
+  
+  .sig3 {
+    stroke-dasharray: 480;
+    animation: stroke3 4s 1 ease-out;
+  }
+  
+  .sig4 {
+    stroke-dasharray: 480;
+    animation: stroke4 4s 1 ease-out;
+  }
+  
+  .sig5 {
+    stroke-dasharray: 670;
+    animation: stroke5 4s 1 ease-out;
+  }
+  
+  .sig6 {
+    stroke-dasharray: 150;
+    animation: stroke6 3.25s 1 ease-in;
+  }
+  
+  @keyframes stroke1 {
+      0% {
+          stroke-dashoffset: 90;
+      }
+      10% {
+          stroke-dashoffset: 0;
+      }
+  }
+  
+  @keyframes stroke2 {
+      0%, 15% {
+          stroke-dashoffset: 500;
+      }
+      35% {
+          stroke-dashoffset: 0;
+      }
+  }
+  
+  @keyframes stroke3 {
+      0%, 20% {
+          stroke-dashoffset: 500;
+      }
+      35% {
+          stroke-dashoffset: 0;
+      }
+  }
+  
+  @keyframes stroke4 {
+      0%, 35% {
+          stroke-dashoffset: 500;
+      }
+      70% {
+          stroke-dashoffset: 0;
+      }
+  }
+  
+  @keyframes stroke5 {
+      0%, 55% {
+          stroke-dashoffset: 680;
+      }
+      90% {
+          stroke-dashoffset: 0;
+      }
+  }
+  
+  @keyframes stroke6 {
+      0%, 90% {
+          stroke-dashoffset: 190;
+      }
+      100% {
+          stroke-dashoffset: 0;
+      }
+  }
